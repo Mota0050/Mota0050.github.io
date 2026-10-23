@@ -258,3 +258,29 @@
  window.addEventListener('hub:settings',e=>{for(const [id,frame]of frames)frame.contentWindow.postMessage({app:'remissnissen-hub-v1',id,kind:'settings',preferences:e.detail},'*');});
  window.addEventListener('hashchange',route);route();
 })();
+
+// Felrapport: öppnar besökarens e-postprogram med ett färdigt mejl.
+(()=>{
+ const TO='mohammadtayeb570@gmail.com';
+ const dlg=document.getElementById('globalReport'),form=document.getElementById('reportForm');
+ if(!dlg||!form)return;
+ const where=document.getElementById('reportWhere'),text=document.getElementById('reportText'),type=document.getElementById('reportType'),fb=document.getElementById('reportFeedback');
+ let returnFocus=null;
+ const place=()=>{const parts=((document.getElementById('hubStatus')?.textContent||'')+' · '+document.title).split(' · ').map(x=>x.trim()).filter(x=>x&&x!=='Remissnissen'&&x!=='Alla terminer');return [...new Set(parts)].join(' · ');};
+ const body=()=>'Typ: '+type.value+'\nVar: '+(where.value.trim()||'(ej angivet)')+'\nAdress: '+location.href+'\n\nBeskrivning:\n'+text.value.trim()+'\n\n— Skickat från Remissnissen ('+new Date().toLocaleString('sv-SE')+')';
+ document.getElementById('hubReport').addEventListener('click',()=>{if(dlg.open)return;returnFocus=document.activeElement;fb.textContent='';where.value=place();dlg.showModal();text.focus();});
+ dlg.querySelector('[data-dialog-close]').addEventListener('click',()=>dlg.close());
+ dlg.addEventListener('click',e=>{if(e.target===dlg){const r=dlg.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dlg.close();}});
+ dlg.addEventListener('close',()=>{if(returnFocus?.isConnected)returnFocus.focus();});
+ form.addEventListener('submit',e=>{
+  e.preventDefault();
+  if(!text.value.trim()){fb.textContent='Skriv en kort beskrivning av felet först.';text.focus();return;}
+  const subject='Remissnissen – '+type.value+(where.value.trim()?': '+where.value.trim():'');
+  location.href='mailto:'+TO+'?subject='+encodeURIComponent(subject.slice(0,150))+'&body='+encodeURIComponent(body());
+  fb.textContent='Ditt e-postprogram öppnas. Öppnas inget? Tryck på "Kopiera texten" och mejla till '+TO+'.';
+ });
+ document.getElementById('reportCopy').addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText('Till: '+TO+'\n'+body());fb.textContent='Texten är kopierad. Klistra in den i ett mejl till '+TO+'.';}
+  catch{fb.textContent='Det gick inte att kopiera. Mejla gärna direkt till '+TO+'.';}
+ });
+})();
