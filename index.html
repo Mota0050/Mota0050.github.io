@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="author" content="Mohammad Tayeb"><title>Remissnissen · Termin 1–12</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<a class="skip" href="#courseGrid">Hoppa till terminerna</a>
+<header class="top" id="hubHeader"><a class="brand" id="overviewLink" href="#/" aria-label="Remissnissen, hem"><span class="mk mascot-face"><img src="images/nisse.webp" alt=""></span><span><b>Remissnissen</b></span></a><div class="hub-actions"><button class="ib" id="hubAsk" type="button" aria-label="Sök" title="Sök (Ctrl K)"><span aria-hidden="true">✧</span><span class="action-text">Sök</span></button><button class="ib" id="hubSettings" type="button" aria-label="Inställningar" title="Inställningar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path stroke-linejoin="round" d="M9.4 3h5.2l.6 2.3 2 1.2 2.3-.7 2.6 4.4-1.8 1.6v2.4l1.8 1.6-2.6 4.4-2.3-.7-2 1.2-.6 2.3H9.4l-.6-2.3-2-1.2-2.3.7L1.9 16l1.8-1.6V12.1L1.9 10.5l2.6-4.4 2.3.7 2-1.2z" transform="translate(0 -1) scale(1 .96)"/></svg></button></div><span id="hubStatus" role="status" aria-live="polite">Alla terminer</span></header>
+<main class="overview" id="overview"><div class="overview-subbar">Hem · Alla terminer</div><div class="shell"><div class="overview-content">
+<section class="hero home-hero"><p class="eyebrow">Din studieplats</p><h1>Välkommen till Remissnissen.</h1><p class="lead">Välj din termin för att komma till kursens startsida, verktyg, målbeskrivningar och examinationer.</p><div class="heroacts"><a class="btn primary" id="resume" href="#/" hidden>Fortsätt där du var →</a></div></section>
+<h2 class="h-sec">Välj termin</h2><div class="areas3 course-grid" id="courseGrid" tabindex="-1"></div><footer class="hub-footer">© 2026 Mohammad Tayeb · Remissnissen</footer></div></div></main>
+<section class="workspace" id="workspace" aria-label="Aktuell kurs" hidden></section>
+<!-- Data: self-contained course documents. Loaded only when selected. -->
+<dialog id="globalSearch" class="hub-dialog" aria-labelledby="searchTitle">
+ <header class="dialog-head"><div><p class="eyebrow">Sök</p><h2 id="searchTitle">Sök i hela studieplatsen</h2></div><button type="button" data-dialog-close aria-label="Stäng sökningen">×</button></header>
+ <p class="dialog-lead">Sök på ämnen, synonymer, kursmål och examinationer. Träffarna hämtas ur sidans eget material.</p>
+ <form id="searchForm"><label class="visually-hidden" for="searchInput">Vad vill du hitta?</label><div class="search-row"><input type="search" id="searchInput" placeholder="Till exempel reumatoid artrit, akut buk eller HLR" autocomplete="off"><button class="btn" type="submit">Sök</button></div>
+ <div class="search-filters"><label>Termin<select id="searchCourse"><option value="">Alla terminer</option><option value="t1">Termin 1</option><option value="t2">Termin 2</option><option value="t3b">Termin 3 · Attack och försvar</option><option value="t4">Termin 4</option><option value="t5">Termin 5</option><option value="t6">Termin 6</option><option value="t7">Termin 7</option><option value="t8">Termin 8</option><option value="t9">Termin 9</option><option value="t11">Termin 11</option><option value="t12">Termin 12</option></select></label><label>Material<select id="searchKind"><option value="">Allt material</option><option value="Uppslag">Uppslag</option><option value="Tentaradar">Tentaradar</option><option value="OSCE">OSCE</option><option value="Kursmål">Kursmål</option><option value="Symtom">Symtom</option><option value="Nomenklatur">Nomenklatur</option></select></label></div></form>
+ <p id="searchCount" role="status" aria-live="polite"></p><ol id="searchResults"></ol><button id="searchMore" class="ib" hidden>Visa fler träffar</button>
+</dialog>
+<dialog id="globalSettings" class="hub-dialog settings-dialog" aria-labelledby="settingsTitle">
+ <header class="dialog-head"><div><p class="eyebrow">Hela studieplatsen</p><h2 id="settingsTitle">Inställningar</h2></div><button type="button" data-dialog-close aria-label="Stäng inställningarna">×</button></header>
+ <p class="dialog-lead">Dina val gäller startsidan och alla terminer. Anteckningar och studieresultat hör till respektive kurs.</p>
+ <p id="storageNotice" role="status" hidden>Det gick inte att spara på enheten. Nya ändringar kan försvinna när sidan stängs.</p>
+ <section><h3>Utseende</h3><label class="pref-row">Färgtema<select data-pref="palette"><option value="sorbet">Sorbet</option><option value="tropisk">Tropisk</option><option value="konfetti">Konfetti</option><option value="lugn">Lugn</option></select></label>
+ <label class="pref-row">Ljust eller mörkt<select data-pref="theme"><option value="light">Ljust</option><option value="dark">Mörkt</option></select></label>
+ <label class="pref-switch"><span><b>Minska rörelser</b><small>Stoppar animationer och nissens rörelser i alla terminer.</small></span><input id="pref-still" type="checkbox" data-pref="still" role="switch"></label><button id="globalFullscreen" type="button" class="ib">Visa i helskärm</button><p id="settingsFeedback" role="status"></p></section>
+ <section><h3>Remissnissen</h3><label class="pref-switch"><span><b>Visa nissen</b><small>Visar maskoten i kurssidorna.</small></span><input id="pref-show" type="checkbox" data-pref="show" role="switch"></label><label class="pref-switch"><span><b>Spontana kommentarer</b><small>Nissen kommenterar det du läser.</small></span><input id="pref-talk" type="checkbox" data-pref="talk" role="switch"></label><label class="pref-switch"><span><b>Nissen går omkring</b><small>Stäng av för att låta honom stå still.</small></span><input id="pref-walk" type="checkbox" data-pref="walk" role="switch"></label>
+ <label class="pref-row" for="pref-name">Vad ska nissen kalla dig?<input id="pref-name" data-pref="name" maxlength="24" placeholder="Ditt förnamn"></label></section>
+ <section><h3>Rita och plugga</h3><label class="pref-switch"><span><b>Visa mina streck</b><small>Visar sparade överstrykningar och teckningar i alla kurser.</small></span><input id="pref-inkShow" type="checkbox" data-pref="inkShow" role="switch"></label>
+ <label class="pref-row">Dagens mål per kurs<select data-pref="goal"><option value="5">5 aktiviteter</option><option value="10">10 aktiviteter</option><option value="15">15 aktiviteter</option><option value="20">20 aktiviteter</option></select></label></section>
+</dialog>
+
+
+
+
+<!-- Application: state, course adapter, routing, events, then initial rendering. -->
+
+<script src="data/terminer.js"></script>
+<script src="data/gemensamt.js"></script>
+<script src="data/terminer/t1/sida.js"></script>
+<script src="data/terminer/t1/uppslag.js"></script>
+<script src="data/terminer/t1/tentaradar.js"></script>
+<script src="data/terminer/t2/sida.js"></script>
+<script src="data/terminer/t2/uppslag.js"></script>
+<script src="data/terminer/t2/tentaradar.js"></script>
+<script src="data/terminer/t3b/sida.js"></script>
+<script src="data/terminer/t3b/uppslag.js"></script>
+<script src="data/terminer/t3b/tentaradar.js"></script>
+<script src="data/terminer/t4/sida.js"></script>
+<script src="data/terminer/t4/uppslag.js"></script>
+<script src="data/terminer/t4/tentaradar.js"></script>
+<script src="data/terminer/t5/sida.js"></script>
+<script src="data/terminer/t5/uppslag.js"></script>
+<script src="data/terminer/t5/tentaradar.js"></script>
+<script src="data/terminer/t6/sida.js"></script>
+<script src="data/terminer/t6/uppslag.js"></script>
+<script src="data/terminer/t6/tentaradar.js"></script>
+<script src="data/terminer/t6/osce.js"></script>
+<script src="data/terminer/t7/sida.js"></script>
+<script src="data/terminer/t7/uppslag.js"></script>
+<script src="data/terminer/t7/tentaradar.js"></script>
+<script src="data/terminer/t8/sida.js"></script>
+<script src="data/terminer/t8/uppslag.js"></script>
+<script src="data/terminer/t8/tentaradar.js"></script>
+<script src="data/terminer/t8/osce.js"></script>
+<script src="data/terminer/t9/sida.js"></script>
+<script src="data/terminer/t9/uppslag.js"></script>
+<script src="data/terminer/t9/tentaradar.js"></script>
+<script src="data/terminer/t11/sida.js"></script>
+<script src="data/terminer/t11/uppslag.js"></script>
+<script src="data/terminer/t11/tentaradar.js"></script>
+<script src="data/terminer/t11/osce.js"></script>
+<script src="data/terminer/t12/sida.js"></script>
+<script src="data/terminer/t12/uppslag.js"></script>
+<script src="data/terminer/t12/tentaradar.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
