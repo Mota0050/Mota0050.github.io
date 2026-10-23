@@ -2,7 +2,7 @@
 <html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="author" content="Mohammad Tayeb"><title>Remissnissen · Termin 1–12</title>
 <link rel="stylesheet" href="style.css"></head><body>
 <a class="skip" href="#courseGrid">Hoppa till terminerna</a>
-<header class="top" id="hubHeader"><a class="brand" id="overviewLink" href="#/" aria-label="Remissnissen, hem"><span class="mk mascot-face"><img src="images/nisse.webp" alt=""></span><span><b>Remissnissen</b></span></a><div class="hub-actions"><button class="ib" id="hubAsk" type="button" aria-label="Sök" title="Sök (Ctrl K)"><span aria-hidden="true">✧</span><span class="action-text">Sök</span></button><button class="ib" id="hubReport" type="button" aria-label="Rapportera fel" title="Rapportera fel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><span class="action-text">Rapportera fel</span></button><button class="ib" id="hubSettings" type="button" aria-label="Inställningar" title="Inställningar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path stroke-linejoin="round" d="M9.4 3h5.2l.6 2.3 2 1.2 2.3-.7 2.6 4.4-1.8 1.6v2.4l1.8 1.6-2.6 4.4-2.3-.7-2 1.2-.6 2.3H9.4l-.6-2.3-2-1.2-2.3.7L1.9 16l1.8-1.6V12.1L1.9 10.5l2.6-4.4 2.3.7 2-1.2z" transform="translate(0 -1) scale(1 .96)"/></svg></button></div><span id="hubStatus" role="status" aria-live="polite">Alla terminer</span></header>
+<header class="top" id="hubHeader"><a class="brand" id="overviewLink" href="#/" aria-label="Remissnissen, hem"><span class="mk mascot-face"><img src="images/nisse.webp" alt=""></span><span><b>Remissnissen</b></span></a><div class="hub-actions"><button class="ib" id="hubAsk" type="button" aria-label="Sök" title="Sök (Ctrl K)"><span aria-hidden="true">✧</span><span class="action-text">Sök</span></button><button class="ib" id="hubReport" type="button" aria-label="Rapportera fel" title="Rapportera fel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><span class="action-text">Rapportera fel</span></button><button class="ib" id="hubAccount" type="button" aria-label="Logga in" title="Logga in och spara dina framsteg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span class="action-text">Logga in</span></button><button class="ib" id="hubSettings" type="button" aria-label="Inställningar" title="Inställningar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path stroke-linejoin="round" d="M9.4 3h5.2l.6 2.3 2 1.2 2.3-.7 2.6 4.4-1.8 1.6v2.4l1.8 1.6-2.6 4.4-2.3-.7-2 1.2-.6 2.3H9.4l-.6-2.3-2-1.2-2.3.7L1.9 16l1.8-1.6V12.1L1.9 10.5l2.6-4.4 2.3.7 2-1.2z" transform="translate(0 -1) scale(1 .96)"/></svg></button></div><span id="hubStatus" role="status" aria-live="polite">Alla terminer</span></header>
 <main class="overview" id="overview"><div class="overview-subbar">Hem · Alla terminer</div><div class="shell"><div class="overview-content">
 <section class="hero home-hero"><p class="eyebrow">Din studieplats</p><h1>Välkommen till Remissnissen.</h1><p class="lead">Välj din termin för att komma till kursens startsida, verktyg, målbeskrivningar och examinationer.</p><div class="heroacts"><a class="btn primary" id="resume" href="#/" hidden>Fortsätt där du var →</a></div></section>
 <h2 class="h-sec">Välj termin</h2><div class="areas3 course-grid" id="courseGrid" tabindex="-1"></div><footer class="hub-footer">© 2026 Mohammad Tayeb · Remissnissen</footer></div></div></main>
@@ -40,6 +40,20 @@
  <p class="report-note">Sidans adress skickas med automatiskt så att felet går att hitta.</p>
  <div class="report-actions"><button class="btn" type="submit">Skicka</button><button class="ib" id="reportCopy" type="button">Kopiera texten</button></div>
  <p id="reportFeedback" role="status" aria-live="polite"></p></form>
+</dialog>
+<dialog id="globalAccount" class="hub-dialog report-dialog" aria-labelledby="accountTitle">
+ <header class="dialog-head"><div><p class="eyebrow">Ditt konto</p><h2 id="accountTitle">Spara dina framsteg</h2></div><button type="button" data-dialog-close aria-label="Stäng kontorutan">×</button></header>
+ <div id="accountSignedOut">
+ <p class="dialog-lead">Logga in med din e-post så sparas dina anteckningar, resultat och inställningar i molnet och följer med till alla dina enheter. Du får en inloggningslänk i mejlet – inget lösenord behövs.</p>
+ <form id="accountForm"><label class="report-field" for="accountEmail">E-postadress<input type="email" id="accountEmail" required autocomplete="email" placeholder="namn@exempel.se"></label>
+ <div class="report-actions"><button class="btn" type="submit">Skicka inloggningslänk</button></div></form>
+ </div>
+ <div id="accountSignedIn" hidden>
+ <p class="dialog-lead">Inloggad som <b id="accountWho"></b>. Dina framsteg sparas automatiskt.</p>
+ <p class="report-note" id="accountState" role="status" aria-live="polite"></p>
+ <div class="report-actions"><button class="btn" id="accountSyncNow" type="button">Synka nu</button><button class="ib" id="accountSignOut" type="button">Logga ut</button></div>
+ </div>
+ <p id="accountFeedback" class="report-note" role="status" aria-live="polite"></p>
 </dialog>
 <!-- Application: state, course adapter, routing, events, then initial rendering. -->
 
@@ -82,5 +96,7 @@
 <script src="data/terminer/t12/uppslag.js"></script>
 <script src="data/terminer/t12/tentaradar.js"></script>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.75.0/dist/umd/supabase.js"></script>
+<script src="sync.js"></script>
 </body>
 </html>
