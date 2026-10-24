@@ -105,7 +105,7 @@ button,input,select,textarea{font-family:var(--body)}
 .ib,.btn{border-radius:999px;font-weight:800;border-width:2px}
 .brand b{font:800 18px var(--head);letter-spacing:-.01em}
 .brand .mk.mascot-face{position:relative;overflow:hidden;width:44px;height:44px;border-radius:50%;background:var(--accent-soft);border:2px solid var(--line)}
-.mascot-face img{position:absolute;max-width:none;width:60px;height:auto;left:-8px;top:-4px}
+.mascot-face img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .overview-content{padding-top:26px}
 .hero.home-hero{padding:30px 32px;border:2px solid var(--line);border-radius:28px;background:linear-gradient(120deg,color-mix(in srgb,var(--a-tr) 12%,var(--surface)),color-mix(in srgb,var(--a-cc) 12%,var(--surface)) 50%,color-mix(in srgb,var(--a-os) 12%,var(--surface)))}
 .hero h1{font:800 clamp(28px,4vw,42px)/1.15 var(--head)}

@@ -62,7 +62,7 @@ html.rn-authed #authGate{display:none!important}
  gate.id='authGate';
  gate.innerHTML=`
 <div class="ag-card" role="main">
- <div class="ag-brand"><img src="images/nisse.webp" alt=""><b>Remissnissen</b></div>
+ <div class="ag-brand"><img src="images/logo.webp" alt=""><b>Remissnissen</b></div>
  <p class="ag-lead" id="agLead">Logga in för att använda studieplatsen. Din progress sparas på ditt konto.</p>
  <p class="ag-wait" id="agWait">Laddar…</p>
  <div id="agMain" hidden>
