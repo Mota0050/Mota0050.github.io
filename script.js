@@ -201,7 +201,7 @@
   pendingAction=null;updateResume();
   $('#hubHeader').hidden=false;
   
-  active=null;$('#overview').hidden=false;$('#workspace').hidden=true;$('#hubStatus').textContent='Alla terminer';{const ht=$('#hubTerm');ht.hidden=true;ht.textContent='';}window.dispatchEvent(new Event('hub:overview'));document.title='Remissnissen · Termin 1–12';
+  active=null;$('#overview').hidden=false;$('#workspace').hidden=true;$('#hubStatus').textContent='Alla terminer';{const ht=$('#hubTerm');ht.hidden=true;ht.textContent='';}document.title='Remissnissen · Termin 1–12';
   for(const frame of frames.values())frame.hidden=true;
   $('#overviewLink').setAttribute('aria-current','page');
  }
@@ -285,37 +285,3 @@
  });
 })();
 
-// Nissen på startsidan: hälsar, pratar ibland och läser upp lappar ur fickan.
-(()=>{
- const box=document.getElementById('hubElf'),say=document.getElementById('hubSay'),fig=document.getElementById('hubElfFig');
- if(!box||!say||!fig)return;
- const P=()=>window.HubSettings?.snapshot?.()||{show:true,talk:true,still:false,name:''};
- const pick=a=>a[Math.floor(Math.random()*a.length)];
- const hour=new Date().getHours();
- const GREET=hour<5?['Sent ute{n}. Ett kort pass, sedan sömn. Jag säger det med omtanke.','Nattplugg{n}? Jag håller dig sällskap en stund.']:hour<10?['God morgon{n}! Välj en termin så börjar vi.','Morgon{n}. Kaffe först, sedan en termin.']:hour<18?['Hej{n}! Vilken termin pluggar vi idag?','Välkommen tillbaka{n}. Jag har hållit ordning på alla terminer.']:['God kväll{n}. Ett kort pass innan läggdags?','Kvällsplugg{n}? Jag är med. Välj en termin.'];
- const LINES=['Varför bär jag mössa? För att mina idéer ska stanna kvar. Det funkar till hälften.','Jag har ett motto: lugn, systematisk, och med kaka i fickan.','Fördelad repetition slår nattplugg. Jag vet. Jag har varit vaken hela natten och kollat.','En välskriven remiss är det finaste man kan ge en kollega. Näst efter kaffe.','Jag har aldrig fel. Jag har bara väldigt breda differentialdiagnoser.','Anamnes, status, tankar. I den ordningen. Jag gör samma sak med frukost.','Hittar du ett fel någonstans? Tryck på Rapportera fel uppe till höger. Jag tar det personligt, men på ett bra sätt.','Jag läste alla ämneskort. En gång rättvänt och en gång när jag hade ramlat.'];
- const POCKET=['Jag hittade en lapp i fickan: “{t}”. Du skrev den. Det var klokt.','Fickpåminnelse: “{t}”.','Det prasslar i västen. Det är din lapp: “{t}”.','Ur fickan, utan anledning: “{t}”. Kan du det fortfarande?'];
- const NOTE_KEY=/^remissnissen\.courses\.v1:([^:]+):da[0-9a-z]*-notes$/;
- function pocketNotes(){const out=[];try{for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i),m=k&&k.match(NOTE_KEY);if(!m)continue;let list=[];try{list=JSON.parse(localStorage.getItem(k)||'[]')||[];}catch{}for(const n of list)if(n&&n.pocket&&typeof n.text==='string'&&n.text.trim())out.push(n.text.replace(/\s+/g,' ').trim());}}catch{}return out;}
- const clip=(t,max)=>t.length>max?t.slice(0,max-1).replace(/\s+\S*$/,'')+'…':t;
- let hideT=0,idleT=0,lastAt=0,busyUntil=0;
- function speak(text,ms){
-  clearTimeout(hideT);say.textContent=text;say.hidden=false;say.classList.remove('out');void say.offsetWidth;say.classList.add('in');
-  box.classList.remove('talk');void box.offsetWidth;box.classList.add('talk');
-  lastAt=Date.now();busyUntil=lastAt+ms;
-  hideT=setTimeout(()=>{say.classList.remove('in');say.classList.add('out');setTimeout(()=>{if(Date.now()>=busyUntil)say.hidden=true;},300);},ms);
- }
- function sayPocket(){const notes=pocketNotes();if(!notes.length)return false;speak(pick(POCKET).replace('{t}',clip(pick(notes),220)),7500);return true;}
- function sayLine(){speak(pick(LINES),5000);}
- function greet(){const n=(P().name||'').trim();speak(pick(GREET).replace('{n}',n?', '+n:''),5000);}
- const visible=()=>!box.hidden&&!document.hidden&&!document.getElementById('overview')?.hidden;
- function schedule(){clearTimeout(idleT);idleT=setTimeout(()=>{if(visible()&&P().talk&&Date.now()>busyUntil){if(Math.random()<.6&&sayPocket()){}else if(Math.random()<.55)sayLine();}schedule();},12000+Math.random()*10000);}
- function apply(){const p=P();box.hidden=!p.show;box.classList.toggle('still',!!p.still);if(box.hidden){say.hidden=true;clearTimeout(hideT);}}
- fig.addEventListener('click',()=>{box.classList.remove('hop');void box.offsetWidth;box.classList.add('hop');if(Date.now()<busyUntil-4000)return;if(!(Math.random()<.5&&sayPocket()))sayLine();});
- window.addEventListener('hub:settings',apply);
- window.addEventListener('hub:overview',()=>{apply();if(visible()&&P().talk&&Date.now()-lastAt>60000)setTimeout(()=>{if(visible()&&Date.now()>busyUntil)(sayPocket()||greet());},900);});
- apply();
- if(visible()&&P().talk)setTimeout(()=>{if(visible())greet();},1200);
- if(visible()&&P().talk)setTimeout(()=>{if(visible()&&Date.now()>busyUntil)sayPocket();},8000);
- schedule();
-})();
