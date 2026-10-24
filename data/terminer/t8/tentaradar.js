@@ -8591,6 +8591,9 @@ REMISSNISSEN.data["t8"].tr={
     "sepsis-och-septisk-chock",
     "esbl",
     "akut-rinosinuit"
+   ],
+   "xcc": [
+    "d-sti"
    ]
   },
   {
@@ -27052,6 +27055,9 @@ REMISSNISSEN.data["t8"].tr={
     "venost-bensar",
     "bullos-pemfigoid",
     "skabb"
+   ],
+   "xcc": [
+    "d-svampinfektion"
    ]
   },
   {
@@ -27509,7 +27515,8 @@ REMISSNISSEN.data["t8"].tr={
     "akne"
    ],
    "xcc": [
-    "d-scc"
+    "d-scc",
+    "d-bcc"
    ]
   },
   {
@@ -27641,7 +27648,8 @@ REMISSNISSEN.data["t8"].tr={
     "hidradenitis-suppurativa"
    ],
    "xcc": [
-    "d-topikal"
+    "d-topikal",
+    "d-kortisonklasser"
    ]
   },
   {
@@ -32650,7 +32658,8 @@ REMISSNISSEN.data["t8"].tr={
    ],
    "xcc": [
     "d-pigmentering-abcde",
-    "d-vaskulara-lesioner"
+    "d-vaskulara-lesioner",
+    "d-benigna-tumorer"
    ]
   },
   {
@@ -38007,7 +38016,8 @@ REMISSNISSEN.data["t8"].tr={
     "psoriasis"
    ],
    "xcc": [
-    "d-vulvodyni"
+    "d-vulvodyni",
+    "d-genitala-dermatoser"
    ]
   },
   {
@@ -38418,7 +38428,10 @@ REMISSNISSEN.data["t8"].tr={
    },
    "has_card": true,
    "investigation": false,
-   "related": []
+   "related": [],
+   "xcc": [
+    "d-virus-hud"
+   ]
   },
   {
    "id": "badklada",
@@ -38464,7 +38477,10 @@ REMISSNISSEN.data["t8"].tr={
    },
    "has_card": true,
    "investigation": false,
-   "related": []
+   "related": [],
+   "xcc": [
+    "d-skabb"
+   ]
   },
   {
    "id": "febril-neutropeni",
