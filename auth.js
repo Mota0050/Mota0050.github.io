@@ -104,6 +104,7 @@ html.rn-authed #authGate{display:none!important}
   <p>Vi sparar ditt användarnamn, din e-postadress och din studieprogress – inget annat.</p>
   <p>Uppgifterna lagras hos Supabase i EU.</p>
   <p>Du kan ta bort ditt konto när som helst under Inställningar.</p>
+  <p><a href="integritet.html" target="_blank" rel="noopener">Läs hela integritetspolicyn</a></p>
  </details>
 </div>`;
  document.body.prepend(gate);
