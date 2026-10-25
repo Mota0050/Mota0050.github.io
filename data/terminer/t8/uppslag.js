@@ -7111,7 +7111,7 @@ REMISSNISSEN.data["t8"].cc={
      "**Pigmenterad hud:** plack ofta tjockare med mer fjällning; rodnaden kan se violett eller grå ut; postinflammatorisk pigmentering."
     ],
     "diag": [
-     "Klinisk diagnos; biopsi sällan (psoriasiform hyperplasi med parakeratos).",
+     "Klinisk diagnos; biopsi sällan, främst för att utesluta diffrentiell diagnos (psoriasiform hyperplasi med parakeratos).",
      "Svårighetsgrad: utbredning (BSA), PASI, lokalisation (ansikte, händer, genitalt räknas som svårare) och livskvalitet (DLQI).",
      "**Anamnes:** debut, ärftlighet, utlösare (infektion, läkemedel, stress), rökning, alkohol, vikt, livskvalitet och **ledsymtom** – morgonstelhet > 30 min, svullna leder, daktylit, entesit (t.ex. hälsmärta), inflammatorisk ryggsmärta.",
      "Guttat psoriasis: sök streptokockinfektion (svalgodling/snabbtest)."
