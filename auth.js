@@ -247,16 +247,17 @@ html.rn-authed #authGate{display:none!important}
  const get=k=>{try{return localStorage.getItem(k);}catch{return null;}};
  const set=(k,v)=>{try{localStorage.setItem(k,v);}catch{}};
 
- let user=null,lastSig=get(SYNCED),timer=null,pushing=false;
+ let user=null,lastSig=get(SYNCED),timer=null,pushing=false,again=false;
  async function push(force=false){
-  if(!user||pushing)return;
+  if(!user)return;
+  if(pushing){again=true;return;}
   const data=collect(),s=sig(data);
   if(!force&&s===lastSig)return;
   pushing=true;
   try{
    const {error}=await sb.from('progress').upsert({user_id:user.id,data,updated_at:new Date().toISOString()});
    if(!error){lastSig=s;set(SYNCED,s);set(OWNER,user.id);}
-  }catch{}finally{pushing=false;}
+  }catch{}finally{pushing=false;if(again){again=false;push();}}
  }
  async function firstSync(){
   const {data:row,error}=await sb.from('progress').select('data').eq('user_id',user.id).maybeSingle();
