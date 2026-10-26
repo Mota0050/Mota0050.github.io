@@ -185,7 +185,14 @@
  #setMenu{position:fixed!important;top:10px!important;right:16px!important;left:auto!important;z-index:150!important;max-height:calc(100dvh - 24px)!important;max-width:calc(100vw - 32px)!important;overflow-y:auto!important}
  @media(max-width:640px){header.top{padding:0 8px}header.top nav.areas a{padding:8px 10px}}
  @media print{header.top{display:none!important}}
- </style>`;
+ @media(max-width:640px){header.top,nav.mob{transition:transform .25s ease}html.rn-bars-hidden header.top,html.rn-bars-hidden nav.mob{transform:translateY(-130px)}}
+ @media(prefers-reduced-motion:reduce){header.top,nav.mob{transition:none!important}}
+ </style><script>(()=>{const mq=matchMedia('(max-width:640px)');let last=0,acc=0,hidden=false;
+ const set=h=>{if(h===hidden)return;hidden=h;document.documentElement.classList.toggle('rn-bars-hidden',h);try{parent.postMessage({app:'remissnissen-hub-v1',kind:'bars',id:(window.__REMISSNISSEN_COURSE__||{}).id,hidden:h},'*');}catch(e){}};
+ addEventListener('scroll',()=>{const y=(document.scrollingElement||document.documentElement).scrollTop,d=y-last;last=y;
+  if(!mq.matches||y<80){acc=0;set(false);return;}
+  if((d>0)!==(acc>0))acc=0;acc+=d;if(acc>24)set(true);else if(acc<-24)set(false);},{passive:true});
+ mq.addEventListener('change',()=>{if(!mq.matches)set(false);});})();</script>`;
  function parseRoute(hash){const m=String(hash||'').match(/^#\/(t(?:1[0-2]|[1-9])b?)(?:\/(.*))?$/);if(m&&!byId[m[1]]&&links[m[1]])return parseRoute('#/'+links[m[1]].link);if(!m||!byId[m[1]])return null;return {id:m[1],hash:m[2]===undefined?safePath(saved.courses[m[1]]?.hash):'#/'+m[2]};}
  function hubHash(id,hash){return '#/'+id+(safePath(hash)==='#/'?'':'/'+safePath(hash).slice(2));}
  function sourceFor(course,hash){
@@ -197,7 +204,9 @@
    .replace(/<head\b[^>]*>/i,m=>m+injection).replace(/<\/head>/i,frameLayout+'</head>');
  }
  function updateResume(){const resume=$('#resume');resume.hidden=!byId[saved.last];if(!resume.hidden){resume.href=hubHash(saved.last,saved.courses[saved.last]?.hash);resume.textContent='Fortsätt i '+byId[saved.last].term+(byId[saved.last].short?' · '+byId[saved.last].short:'')+' →';}}
+ function setHubBars(h){const hh=$('#hubHeader');h=!!h&&matchMedia('(max-width:640px)').matches;hh.style.marginTop=h?(-hh.offsetHeight)+'px':'';hh.inert=h;}
  function showOverview(){
+  setHubBars(false);
   pendingAction=null;updateResume();
   $('#hubHeader').hidden=false;
   
@@ -214,12 +223,14 @@
   if(!frame){frame=document.createElement('iframe');frame.className='course-frame';frame.title='Remissnissen '+c.term;frame.name='remissnissen-'+c.id;frames.set(c.id,frame);$('#workspace').appendChild(frame);frame.srcdoc=sourceFor(c,r.hash);}
   else if(ready.has(c.id))frame.contentWindow.postMessage({app:'remissnissen-hub-v1',kind:'navigate',id:c.id,hash:r.hash},'*');
   for(const [id,item]of frames)item.hidden=id!==active;
+  setHubBars(false);
   saved.courses[c.id]={...saved.courses[c.id],hash:r.hash};saved.last=c.id;persist();
   
  }
  window.addEventListener('message',e=>{
   const msg=e.data;if(!msg||msg.app!=='remissnissen-hub-v1'||!byId[msg.id])return;
   const frame=frames.get(msg.id);if(!frame||e.source!==frame.contentWindow)return;
+  if(msg.kind==='bars'){if(msg.id===active)setHubBars(msg.hidden);return;}
   if(msg.kind==='switch'){
    if(msg.target==='overview')location.hash='#/';
    else if(byId[msg.target])location.hash=msg.hash?hubHash(msg.target,msg.hash):'#/'+msg.target;
