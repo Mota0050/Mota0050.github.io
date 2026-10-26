@@ -186,7 +186,8 @@
  @media(max-width:640px){header.top{padding:0 8px}header.top nav.areas a{padding:8px 10px}}
  @media print{header.top{display:none!important}}
  @media(max-width:640px){header.top,nav.mob{transition:transform .25s ease}html.rn-bars-hidden header.top,html.rn-bars-hidden nav.mob{transform:translateY(-130px)}}
- @media(prefers-reduced-motion:reduce){header.top,nav.mob{transition:none!important}}
+ @media(prefers-reduced-motion:reduce){header.top,nav.mob,.filt,.letters{transition:none!important}}
+@media(max-width:640px){.filt,.letters{transition:transform .25s ease,opacity .2s ease}html.rn-bars-hidden .filt,html.rn-bars-hidden .letters{transform:translateY(calc(-100% - var(--hdr) - 24px));opacity:0;pointer-events:none}}
  </style><script>(()=>{const mq=matchMedia('(max-width:640px)');let last=0,acc=0,hidden=false;
  const set=h=>{if(h===hidden)return;hidden=h;document.documentElement.classList.toggle('rn-bars-hidden',h);try{parent.postMessage({app:'remissnissen-hub-v1',kind:'bars',id:(window.__REMISSNISSEN_COURSE__||{}).id,hidden:h},'*');}catch(e){}};
  addEventListener('scroll',()=>{const y=(document.scrollingElement||document.documentElement).scrollTop,d=y-last;last=y;
