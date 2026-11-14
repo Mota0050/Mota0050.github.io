@@ -7,9 +7,11 @@
 <title>Integritetspolicy · Remissnissen</title>
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+<script>try{var p=JSON.parse(localStorage.getItem("remissnissen.settings.v2")||"null");if(p&&(p.theme==="dark"||p.theme==="light"))document.documentElement.setAttribute("data-theme",p.theme);}catch(e){}</script>
 <style>
 :root{--bg:#fff7f5;--card:#ffffff;--ink:#2b2233;--muted:#6b6070;--line:#f1dcdc;--accent:#e0336f}
-@media (prefers-color-scheme:dark){:root{--bg:#1c1820;--card:#26212b;--ink:#f1eaf3;--muted:#b7aabd;--line:#3a3240;--accent:#ff6b9a}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1820;--card:#26212b;--ink:#f1eaf3;--muted:#b7aabd;--line:#3a3240;--accent:#ff6b9a}}
+:root[data-theme="dark"]{--bg:#1c1820;--card:#26212b;--ink:#f1eaf3;--muted:#b7aabd;--line:#3a3240;--accent:#ff6b9a}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
@@ -34,7 +36,7 @@ th{font-weight:600}
 <div class="card">
 <div class="eyebrow">Remissnissen</div>
 <h1>Integritetspolicy</h1>
-<p class="muted">Senast uppdaterad 25 oktober 2026</p>
+<p class="muted">Senast uppdaterad 14 november 2026</p>
 
 <p>Här beskriver jag vilka personuppgifter Remissnissen behandlar, varför, var de lagras och vilka rättigheter du har enligt dataskyddsförordningen (GDPR).</p>
 
@@ -50,13 +52,13 @@ Kontakt: <a href="mailto:mohammadtayeb570@gmail.com">mohammadtayeb570@gmail.com<
 <tr><td>Lösenord</td><td>Inloggning. Lösenordet sparas bara krypterat (hashat) och kan inte läsas av någon, inte heller av mig.</td><td>Avtal (art. 6.1 b)</td></tr>
 <tr><td>Studieprogress och inställningar (t.ex. vad du läst, resultat, anteckningar, markeringar och val i Inställningar)</td><td>Spara din progress så att den finns kvar mellan enheter och besök</td><td>Avtal (art. 6.1 b)</td></tr>
 <tr><td>Tekniska uppgifter som IP-adress och webbläsarinformation i serverloggar</td><td>Leverera sidan, säkerhet och felsökning. Loggarna förs automatiskt av driftleverantörerna nedan.</td><td>Berättigat intresse (art. 6.1 f)</td></tr>
-<tr><td>Det du skriver i en felrapport</td><td>Rätta fel på sidan. Felrapporter skickas som vanligt mejl från ditt eget e-postprogram.</td><td>Berättigat intresse (art. 6.1 f)</td></tr>
+<tr><td>Det du skriver i en felrapport</td><td>Rätta fel på sidan. Felrapporter sparas i databasen tillsammans med ditt användar-id, sidans adress och tidpunkt. Om det inte går skickas de som vanligt mejl från ditt eget e-postprogram.</td><td>Berättigat intresse (art. 6.1 f)</td></tr>
 </tbody>
 </table>
 <p>Remissnissen använder <strong>ingen</strong> statistik- eller annonsspårning, inga reklamcookies och delar eller säljer aldrig dina uppgifter.</p>
 
 <h2>Lagring i din webbläsare</h2>
-<p>Sidan sparar din inloggning, dina inställningar och din progress i webbläsarens lokala lagring (localStorage) på din egen enhet. Det behövs för att sidan ska fungera som du har bett om, och används inte för spårning. Därför krävs inget samtycke för det, enligt lagen om elektronisk kommunikation. Du kan rensa lagringen när som helst via webbläsarens inställningar.</p>
+<p>Sidan sparar din inloggning, dina inställningar och din progress i webbläsarens lokala lagring (localStorage) på din egen enhet. Det behövs för att sidan ska fungera som du har bett om, och används inte för spårning. Därför krävs inget samtycke för det, enligt lagen om elektronisk kommunikation. Sidan sparar också en kopia av sina egna filer (texter, bilder och kod) så att den fungerar utan internet. Den kopian innehåller inga uppgifter om dig. Du kan rensa lagringen när som helst via webbläsarens inställningar.</p>
 
 <h2>Vilka andra hanterar uppgifterna?</h2>
 <p>Följande leverantörer hanterar uppgifter för Remissnissens räkning (personuppgiftsbiträden):</p>
@@ -66,7 +68,7 @@ Kontakt: <a href="mailto:mohammadtayeb570@gmail.com">mohammadtayeb570@gmail.com<
 </ul>
 
 <h2>Hur länge sparas uppgifterna?</h2>
-<p>Dina kontouppgifter och din progress sparas så länge du har kvar ditt konto. När du tar bort ditt konto under <em>Inställningar → Ta bort konto</em> raderas kontot, din profil och all sparad progress direkt från databasen. Uppgifter i webbläsarens lokala lagring ligger kvar på din enhet tills du rensar dem i webbläsaren. Felrapporter via mejl sparas tills felet är åtgärdat.</p>
+<p>Dina kontouppgifter och din progress sparas så länge du har kvar ditt konto. När du tar bort ditt konto under <em>Inställningar → Ta bort konto</em> raderas kontot, din profil och all sparad progress direkt från databasen. Dina uppgifter i webbläsarens lokala lagring tas bort från enheten när du loggar ut eller tar bort kontot. Felrapporter sparas tills felet är åtgärdat och raderas när kontot tas bort.</p>
 
 <h2>Dina rättigheter</h2>
 <p>Du har rätt att:</p>
@@ -74,7 +76,7 @@ Kontakt: <a href="mailto:mohammadtayeb570@gmail.com">mohammadtayeb570@gmail.com<
 <li>få veta vilka uppgifter som finns om dig och få en kopia av dem (registerutdrag)</li>
 <li>få felaktiga uppgifter rättade</li>
 <li>få dina uppgifter raderade – det gör du själv genom att ta bort ditt konto</li>
-<li>få ut dina uppgifter i ett maskinläsbart format (dataportabilitet)</li>
+<li>få ut dina uppgifter i ett maskinläsbart format (dataportabilitet) – det gör du själv under <em>Inställningar → Ladda ner min progress</em></li>
 <li>invända mot behandling som grundar sig på berättigat intresse</li>
 </ul>
 <p>Mejla <a href="mailto:mohammadtayeb570@gmail.com">mohammadtayeb570@gmail.com</a> så svarar jag inom en månad.</p>
