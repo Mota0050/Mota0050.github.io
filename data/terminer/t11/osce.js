@@ -299,7 +299,7 @@ REMISSNISSEN.data["t11"].os={
    "Dubbletter: ”2019 HT OSCE III” är identisk med ”2019 VT OmOSCE III” (daterad 2019-05-03) och ”2022 VT OSCE III” är identisk med OSCE III VT23 (daterad 2023-03-17). De räknas en gång. Ordinarie OSCE III HT19 och VT22 saknas därmed i materialet, liksom VT20, om-HT20 och om-HT21.",
    "HT20, VT21 och om-VT21 saknar datum i materialet.",
    "Bedömningsmallarna är maskinutlästa (tier ”auto”). Poängsumman stämmer mot mallens TOTAL för alla automatiskt tolkade stationer, men radtexter kan vara förkortade eller hopslagna, särskilt i flerkolumnsmallar (t.ex. EDS, HLR barn, BFM). Jämför med källfilen. Mallar som inte gick att tolka har förts in manuellt från renderade sidor (tier ”manual”).",
-   "VT21: bedömningsmallen anger inte poäng per rad för de flesta stationer och saknar totalsumma; raderna finns med utan poäng (max = null).",
+   "VT21: bedömningsmallen anger inte poäng per rad för de flesta stationer och saknar totalsumma; raderna finns med utan poäng.",
    "HT22 st. 13 (KOL-exacerbation) anger bara delmoment (A, B, C …) utan beskrivning.",
    "VT25: dörrinformationen för station 9 och 17 låg i omvänd ordning mot bedömningsmallarna (visus respektive direkt oftalmoskopi) och har kopplats om.",
    "Om-VT22 station 14 (ofrivillig viktnedgång) saknar dörrinformation i materialet. Dörrinformation för om-HT18, om-VT19, om-HT19 och om-VT21 saknade stationsnummer och har kopplats sida för sida i samma ordning som bedömningsmallarna.",
