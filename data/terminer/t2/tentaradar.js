@@ -105,8 +105,8 @@ REMISSNISSEN.data["t2"].tr={
    }
   ],
   "thresholds": {
-   "karnan": "≥3 av 11 tentor (≥27 %)",
-   "vanliga": "3–2 tentor",
+   "karnan": "≥4 av 11 tentor (≥36 %)",
+   "vanliga": "3 tentor",
    "enstaka": "1–2 tentor",
    "note": "Alla 11 tentatillfällen med facit i mappen är inlästa."
   },
@@ -2012,7 +2012,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 4,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del1_Tentamen",
@@ -2098,7 +2098,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 4,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del2_Omtentamen",
@@ -2182,7 +2182,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 4,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del2_Omtentamen",
@@ -2265,7 +2265,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 1,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del1_Tentamen",
@@ -2342,7 +2342,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del2_Tentamen",
@@ -2417,7 +2417,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 1,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del2_Omtentamen",
@@ -2493,7 +2493,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del2_Omtentamen",
@@ -2569,7 +2569,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del1_Omtentamen",
@@ -2645,7 +2645,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 1,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del1_Tentamen",
@@ -2722,7 +2722,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del1_Tentamen",
@@ -2796,7 +2796,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": true,
    "exams": [
     "2025_HT_Del1_Omtentamen",
@@ -2872,7 +2872,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del2_Tentamen",
@@ -2945,7 +2945,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del1_Omtentamen",
@@ -3020,7 +3020,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 1,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del1_Omtentamen",
@@ -3096,7 +3096,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del1_Tentamen",
@@ -3171,7 +3171,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del2_Omtentamen",
@@ -3247,7 +3247,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 1,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del1_Omtentamen",
@@ -3324,7 +3324,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del2_Tentamen",
@@ -3399,7 +3399,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del2_Tentamen",
@@ -3476,7 +3476,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 1,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del2_Omtentamen",
@@ -3550,7 +3550,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 2,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del1_Omtentamen",
@@ -3627,7 +3627,7 @@ REMISSNISSEN.data["t2"].tr={
    "n_questions": 3,
    "n_years": 1,
    "pct": 27.3,
-   "category": "karnan",
+   "category": "vanliga",
    "akut": false,
    "exams": [
     "2025_VT_Del1_Omtentamen",
