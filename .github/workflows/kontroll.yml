@@ -1,0 +1,16 @@
+# Kontrollerar datafilerna vid varje push och pull request. Ett rött kryss i GitHub betyder
+# att något är fel; klicka på krysset för att se vilken fil och vad som behöver rättas.
+name: Kontroll av sidan
+on:
+  push:
+  pull_request:
+jobs:
+  kontroll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Kontrollera data och filer
+        run: node tools/kontrollera.js

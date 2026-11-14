@@ -1822,7 +1822,7 @@ REMISSNISSEN.data["t8"].os={
     "VT26"
    ],
    "card": {
-    "fk": "Konsultationsstationer utan egen guide: anamnes, information och gemensam plan med patienten. Bedöms på struktur, kommunikation och om patientens frågor besvaras.",
+    "fk": "Konsultationsstationer på hälsocentral: anamnes, information och gemensam plan med patienten. Bedöms på struktur, kommunikation och om patientens frågor besvaras.",
     "v": [
      "Presentation och inledning",
      "Samtycke och förklaring inför undersökning",
@@ -3849,6 +3849,113 @@ REMISSNISSEN.data["t8"].os={
       "declared": 10,
       "source": "om-OSCE II VT23 Bedömningsunderlag.pdf",
       "page": 8
+     }
+    ],
+    "safety": null
+   },
+   "konsultation": {
+    "id": "konsultation",
+    "title": "Patientcentrerad konsultation",
+    "fam": "Patientcentrerad konsultation",
+    "exam": "Konsultation på hälsocentral där patienten söker för ett vardagligt problem (trötthet, andfåddhet, förändrade avföringsvanor, förhöjt blodsocker, rygg- eller axelbesvär). Mallarna bedömer strukturen i tre delar (patientens, läkarens och den gemensamma delen), att du efterfrågar patientens tankar, oro och önskemål, använder kvitton och sammanfattningar, tar en riktad anamnes och avslutar med en gemensam plan.",
+    "task": "Senaste dörrinformation (oVT26 st. 8): Till din vårdcentral kommer en 25-årig patient på återbesök. Hen sökte vårdcentralen förra veckan pga. tilltagande trötthet och frusenhet sedan flera månader. Kapillärt Hb, CRP och glukos var då utan anmärkning, TSH ökat (17 mIU/L). Inför återbesök till dig togs kompletterande prover enligt nedan: Din uppgift: Komplett…",
+    "prep": [
+     "Ha konsultationens tre delar som ryggrad: patientens del (berättelse, tankar, oro, önskemål), läkarens del (riktad anamnes, ev. status och provsvar) och den gemensamma delen (information, beslut, plan).",
+     "Träna på att säga en kort sammanfattning (\"kvitto\") högt efter patientens del. Det ger poäng i nästan varje mall.",
+     "Kunna de vanligaste orsakerna till trötthet, andfåddhet och förändrade avföringsvanor, och vilka larmsymtom som ska efterfrågas."
+    ],
+    "steps": [
+     "Hälsa, presentera dig och börja med en öppen fråga. Låt patienten tala till punkt.",
+     "Efterfråga patientens tankar om orsaken, oro och vad hen önskar av besöket.",
+     "Ge ett kvitto: sammanfatta det patienten sagt och fråga om det stämmer.",
+     "Ta en riktad anamnes utifrån problemet: debut och förlopp, associerade symtom, larmsymtom, läkemedel, tobak, alkohol, ärftlighet och livssituation (sömn, stress, arbete).",
+     "Tolka eventuella provsvar eller fynd och förklara dem begripligt, kopplat till patientens tankar och oro.",
+     "Kom överens om en plan tillsammans med patienten: vidare utredning, behandling eller avvaktan, och hur uppföljningen ska gå till.",
+     "Kontrollera att patienten förstått, ge säkerhetsnät (när hen ska höra av sig tidigare) och fråga om något är oklart."
+    ],
+    "say": [
+     "\"Berätta, vad är det som gör att du kommer hit i dag?\"",
+     "\"Har du själv funderat på vad det kan bero på? Finns det något du är orolig för?\"",
+     "\"Vad hade du hoppats att vi skulle kunna göra i dag?\"",
+     "\"Om jag sammanfattar: du har varit trött i flera månader och är orolig att det är något allvarligt. Har jag förstått rätt?\"",
+     "\"Hur låter det för dig om vi gör så här?\""
+    ],
+    "interp": [
+     "Patientens tankar, oro och önskemål styr hur informationen ska läggas fram; en välgrundad bedömning som inte bemöter oron upplevs ofta som otillräcklig.",
+     "Provsvar ska tolkas i sitt sammanhang. Ett normalt prov utesluter inte allt, och ett avvikande prov ska förklaras i ord patienten förstår."
+    ],
+    "ddx": [
+     "Trötthet: hypotyreos, anemi, depression, sömnbrist eller sömnapné, diabetes, läkemedelsbiverkan, stress.",
+     "Andfåddhet: astma, KOL, hjärtsvikt, anemi, nedsatt kondition.",
+     "Förändrade avföringsvanor: kolorektal cancer (larmsymtom, positivt F-Hb), IBS, läkemedel, hypotyreos."
+    ],
+    "mgmt": [
+     "Gemensam plan med tydlig nästa åtgärd (prover, remiss, behandling eller avvaktan) och tid för uppföljning.",
+     "Ge säkerhetsnät: vilka symtom som ska göra att patienten söker tidigare."
+    ],
+    "pitDoc": [
+     "Dokumenterat: stationstypen fanns i 6 av 18 tillfällen.",
+     "Dokumenterat: tankar, oro och önskemål ger 0,5 p var, och kvitton eller sammanfattningar ger ytterligare 0,5 p i flera mallar (t.ex. VT26 st. 1 och oVT26 st. 1).",
+     "Dokumenterat: att upprätthålla strukturen (patientens, läkarens och den gemensamma delen) ger 1 p i flera mallar."
+    ],
+    "pitGen": [
+     "Allmänt: att gå direkt på slutna frågor innan patienten fått berätta.",
+     "Allmänt: att ge en korrekt medicinsk förklaring utan att bemöta patientens egen oro."
+    ],
+    "never": [
+     "Tankar, oro och önskemål.",
+     "Minst ett kvitto eller en sammanfattning.",
+     "En gemensam plan med uppföljning."
+    ],
+    "quick": [
+     "Öppen fråga",
+     "Tankar, oro, önskemål",
+     "Kvitto",
+     "Riktad anamnes + larmsymtom",
+     "Förklara begripligt",
+     "Gemensam plan",
+     "Säkerhetsnät"
+    ],
+    "rub": [
+     {
+      "key": "oVT26|8",
+      "label": "oVT26 st. 8 – Trötthet – anamnes och information (hypotyreos) (10 p)",
+      "total": 10,
+      "declared": 10,
+      "source": "Bedömningsmallar om-OSCE II VT26.pdf",
+      "page": 6
+     },
+     {
+      "key": "VT26|1",
+      "label": "VT26 st. 1 – Trötthet – patientcentrerad konsultation med labsvar (10 p)",
+      "total": 10,
+      "declared": 10,
+      "source": "Bedömningsmallar OSCE II Vt26.pdf",
+      "page": 1
+     },
+     {
+      "key": "oVT23|7",
+      "label": "oVT23 st. 7 – Trötthet – anamnes, status, utredning (10 p)",
+      "total": 10,
+      "declared": 10,
+      "source": "om-OSCE II VT23 Bedömningsunderlag.pdf",
+      "page": 6
+     },
+     {
+      "key": "VT23|2",
+      "label": "VT23 st. 2 – Patient med ryggbesvär – anamnes inkl. cauda equina (10 p)",
+      "total": 10,
+      "declared": 10,
+      "source": "OSCE II VT23 Bedömningsunderlag.pdf",
+      "page": 1
+     },
+     {
+      "key": "VT22|3",
+      "label": "VT22 st. 3 – Axelbesvär – patientcentrerad anamnes (TOA) (10 p)",
+      "total": 10,
+      "declared": 10,
+      "source": "OSCE II VT 22 Bedömningsunderlag.pdf",
+      "page": 3
      }
     ],
     "safety": null

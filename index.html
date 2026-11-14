@@ -1,23 +1,27 @@
 <!doctype html>
 <html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="author" content="Mohammad Tayeb"><title>Remissnissen · Termin 1–12</title>
+<meta name="description" content="Remissnissen är en studieplats för läkarprogrammet: tentaradar, uppslagsbok och OSCE-träning för termin 1–12.">
+<meta name="theme-color" content="#fff4ef" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#221a2e" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="Remissnissen"><meta property="og:description" content="Tentaradar, uppslagsbok och OSCE-träning för läkarprogrammet, termin 1–12."><meta property="og:type" content="website"><meta property="og:url" content="https://remissnissen.se/"><meta property="og:image" content="https://remissnissen.se/images/favicon-512.png"><meta property="og:locale" content="sv_SE">
+<link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png"><link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<style id="authPreGate">html:not(.rn-authed) body>*:not(#authGate){display:none!important}</style>
+<style id="authPreGate">html:not(.rn-authed) body>*:not(#authGate):not(noscript){display:none!important}</style>
 <script src="vendor/supabase.js"></script>
 <script src="config.js"></script>
 <script src="auth.js" defer></script>
 <link rel="stylesheet" href="style.css"></head><body>
-<a class="skip" href="#courseGrid">Hoppa till terminerna</a>
+<noscript><div class="noscript"><b>Remissnissen behöver JavaScript.</b> Slå på JavaScript i webbläsarens inställningar och ladda om sidan.</div><style>#authGate{display:none!important}</style></noscript>
+<a class="skip" href="#courseGrid">Hoppa till innehållet</a>
 <header class="top" id="hubHeader"><a class="brand" id="overviewLink" href="#/" aria-label="Remissnissen, hem"><span class="mk mascot-face"><img src="images/logo.webp" alt=""></span><span><b>Remissnissen</b></span></a><span class="hub-term" id="hubTerm" hidden></span><div class="hub-actions"><button class="ib" id="hubAsk" type="button" aria-label="Sök" title="Sök (Ctrl K)"><span aria-hidden="true">✧</span><span class="action-text">Sök</span></button><button class="ib" id="hubReport" type="button" aria-label="Rapportera fel" title="Rapportera fel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><span class="action-text">Rapportera fel</span></button><button class="ib" id="hubSettings" type="button" aria-label="Inställningar" title="Inställningar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path stroke-linejoin="round" d="M9.4 3h5.2l.6 2.3 2 1.2 2.3-.7 2.6 4.4-1.8 1.6v2.4l1.8 1.6-2.6 4.4-2.3-.7-2 1.2-.6 2.3H9.4l-.6-2.3-2-1.2-2.3.7L1.9 16l1.8-1.6V12.1L1.9 10.5l2.6-4.4 2.3.7 2-1.2z" transform="translate(0 -1) scale(1 .96)"/></svg></button></div><span id="hubStatus" role="status" aria-live="polite">Alla terminer</span></header>
 <main class="overview" id="overview"><div class="overview-subbar">Hem · Alla terminer</div><div class="shell"><div class="overview-content">
-<section class="hero home-hero"><p class="eyebrow">Din studieplats</p><h1>Välkommen till Remissnissen.</h1><p class="lead">Välj din termin för att komma till kursens startsida, verktyg, målbeskrivningar och examinationer.</p><div class="heroacts"><a class="btn primary" id="resume" href="#/" hidden>Fortsätt där du var →</a></div></section>
+<p class="hub-notice" id="hubNotice" role="status" hidden>Sidan du försökte öppna finns inte. Länken kan vara gammal. Välj en termin nedan.</p><section class="hero home-hero"><p class="eyebrow">Din studieplats</p><h1>Välkommen till Remissnissen.</h1><p class="lead">Välj din termin för att komma till kursens startsida, verktyg, målbeskrivningar och examinationer.</p><div class="heroacts"><a class="btn primary" id="resume" href="#/" hidden>Fortsätt där du var →</a></div></section>
 <h2 class="h-sec">Välj termin</h2><div class="areas3 course-grid" id="courseGrid" tabindex="-1"></div><footer class="hub-footer">© 2026 Mohammad Tayeb · Remissnissen · <a href="integritet.html">Integritetspolicy</a></footer></div></div></main>
-<section class="workspace" id="workspace" aria-label="Aktuell kurs" hidden></section>
-<!-- Data: self-contained course documents. Loaded only when selected. -->
+<section class="workspace" id="workspace" aria-label="Aktuell kurs" hidden><div class="course-loading" id="courseLoading" hidden></div></section>
 <dialog id="globalSearch" class="hub-dialog" aria-labelledby="searchTitle">
  <header class="dialog-head"><div><p class="eyebrow">Sök</p><h2 id="searchTitle">Sök i hela studieplatsen</h2></div><button type="button" data-dialog-close aria-label="Stäng sökningen">×</button></header>
  <p class="dialog-lead">Sök på ämnen, synonymer, kursmål och examinationer. Träffarna hämtas ur sidans eget material.</p>
  <form id="searchForm"><label class="visually-hidden" for="searchInput">Vad vill du hitta?</label><div class="search-row"><input type="search" id="searchInput" placeholder="Till exempel reumatoid artrit, akut buk eller HLR" autocomplete="off"><button class="btn" type="submit">Sök</button></div>
- <div class="search-filters"><label>Termin<select id="searchCourse"><option value="">Alla terminer</option><option value="t1">Termin 1</option><option value="t2">Termin 2</option><option value="t3b">Termin 3 · Attack och försvar</option><option value="t4">Termin 4</option><option value="t5">Termin 5</option><option value="t6">Termin 6</option><option value="t7">Termin 7</option><option value="t8">Termin 8</option><option value="t9">Termin 9</option><option value="t11">Termin 11</option><option value="t12">Termin 12</option></select></label><label>Material<select id="searchKind"><option value="">Allt material</option><option value="Uppslag">Uppslag</option><option value="Tentaradar">Tentaradar</option><option value="OSCE">OSCE</option><option value="Kursmål">Kursmål</option><option value="Symtom">Symtom</option><option value="Nomenklatur">Nomenklatur</option></select></label></div></form>
+ <div class="search-filters"><label>Termin<select id="searchCourse"><option value="">Alla terminer</option></select></label><label>Material<select id="searchKind"><option value="">Allt material</option><option value="Uppslag">Uppslag</option><option value="Tentaradar">Tentaradar</option><option value="OSCE">OSCE</option><option value="Kursmål">Kursmål</option><option value="Symtom">Symtom</option><option value="Nomenklatur">Nomenklatur</option></select></label></div></form>
  <p id="searchCount" role="status" aria-live="polite"></p><ol id="searchResults"></ol><button id="searchMore" class="ib" hidden>Visa fler träffar</button>
 </dialog>
 <dialog id="globalSettings" class="hub-dialog settings-dialog" aria-labelledby="settingsTitle">
@@ -38,54 +42,17 @@
 
 <dialog id="globalReport" class="hub-dialog report-dialog" aria-labelledby="reportTitle">
  <header class="dialog-head"><div><p class="eyebrow">Hjälp nissen bli bättre</p><h2 id="reportTitle">Rapportera fel</h2></div><button type="button" data-dialog-close aria-label="Stäng felrapporten">×</button></header>
- <p class="dialog-lead">Hittade du ett faktafel, ett stavfel eller något som inte fungerar? Beskriv det här. När du trycker på Skicka öppnas ditt e-postprogram med ett färdigt mejl.</p>
+ <p class="dialog-lead">Hittade du ett faktafel, ett stavfel eller något som inte fungerar? Beskriv det här. Rapporten skickas direkt till mig när du trycker på Skicka.</p>
  <form id="reportForm"><label class="pref-row">Typ av fel<select id="reportType"><option>Faktafel</option><option>Stavfel eller språk</option><option>Något fungerar inte</option><option>Förslag på förbättring</option><option>Annat</option></select></label>
  <label class="report-field" for="reportWhere">Var finns felet?<input id="reportWhere" maxlength="200" placeholder="Till exempel T6 · Uppslag · Hjärtsvikt"></label>
  <label class="report-field" for="reportText">Beskriv felet<textarea id="reportText" rows="6" maxlength="3000" required placeholder="Vad står det, och vad borde det stå?"></textarea></label>
  <p class="report-note">Sidans adress skickas med automatiskt så att felet går att hitta.</p>
- <div class="report-actions"><button class="btn" type="submit">Skicka</button><button class="ib" id="reportCopy" type="button">Kopiera texten</button></div>
+ <div class="report-actions"><button class="btn" type="submit">Skicka</button><button class="ib" id="reportCopy" type="button" hidden>Kopiera texten</button></div>
  <p id="reportFeedback" role="status" aria-live="polite"></p></form>
 </dialog>
-<!-- Application: state, course adapter, routing, events, then initial rendering. -->
 
 <script src="data/terminer.js"></script>
-<script src="data/gemensamt.js"></script>
-<script src="data/terminer/t1/sida.js"></script>
-<script src="data/terminer/t1/uppslag.js"></script>
-<script src="data/terminer/t1/tentaradar.js"></script>
-<script src="data/terminer/t2/sida.js"></script>
-<script src="data/terminer/t2/uppslag.js"></script>
-<script src="data/terminer/t2/tentaradar.js"></script>
-<script src="data/terminer/t3b/sida.js"></script>
-<script src="data/terminer/t3b/uppslag.js"></script>
-<script src="data/terminer/t3b/tentaradar.js"></script>
-<script src="data/terminer/t4/sida.js"></script>
-<script src="data/terminer/t4/uppslag.js"></script>
-<script src="data/terminer/t4/tentaradar.js"></script>
-<script src="data/terminer/t5/sida.js"></script>
-<script src="data/terminer/t5/uppslag.js"></script>
-<script src="data/terminer/t5/tentaradar.js"></script>
-<script src="data/terminer/t6/sida.js"></script>
-<script src="data/terminer/t6/uppslag.js"></script>
-<script src="data/terminer/t6/tentaradar.js"></script>
-<script src="data/terminer/t6/osce.js"></script>
-<script src="data/terminer/t7/sida.js"></script>
-<script src="data/terminer/t7/uppslag.js"></script>
-<script src="data/terminer/t7/tentaradar.js"></script>
-<script src="data/terminer/t8/sida.js"></script>
-<script src="data/terminer/t8/uppslag.js"></script>
-<script src="data/terminer/t8/tentaradar.js"></script>
-<script src="data/terminer/t8/osce.js"></script>
-<script src="data/terminer/t9/sida.js"></script>
-<script src="data/terminer/t9/uppslag.js"></script>
-<script src="data/terminer/t9/tentaradar.js"></script>
-<script src="data/terminer/t11/sida.js"></script>
-<script src="data/terminer/t11/uppslag.js"></script>
-<script src="data/terminer/t11/tentaradar.js"></script>
-<script src="data/terminer/t11/osce.js"></script>
-<script src="data/terminer/t12/sida.js"></script>
-<script src="data/terminer/t12/uppslag.js"></script>
-<script src="data/terminer/t12/tentaradar.js"></script>
+<!-- Terminernas material (data/gemensamt.js och data/terminer/<id>/) laddas av script.js först när en termin öppnas. -->
 <script src="script.js"></script>
 </body>
 </html>

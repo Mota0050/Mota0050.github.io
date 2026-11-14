@@ -1,0 +1,20 @@
+Copyright © 2026 Mohammad Tayeb. Alla rättigheter förbehållna.
+
+Koden och innehållet i det här repot (texter, sammanställningar, frågor,
+bilder och data) är publicerat för att driva webbplatsen remissnissen.se.
+Att repot är offentligt betyder inte att innehållet får användas fritt.
+
+Det är inte tillåtet att kopiera, sprida, publicera eller återanvända
+innehållet, helt eller delvis, utan skriftligt tillstånd från upphovspersonen.
+Du får använda webbplatsen för dina egna studier.
+
+Kontakt för tillstånd: mohammadtayeb570@gmail.com
+
+---
+
+All rights reserved. This repository is public only to host remissnissen.se.
+No permission is granted to copy, distribute, publish or reuse its contents
+without written permission from the author.
+
+Undantag: vendor/supabase.js är Supabase JS-klienten och omfattas av sin egen
+MIT-licens (https://github.com/supabase/supabase-js).
