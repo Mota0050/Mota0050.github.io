@@ -1569,7 +1569,7 @@ REMISSNISSEN.data["t8"].tr={
     "hyperalgesi",
     "hyperalgesia"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "begrepp",
    "n_sessions": 29,
    "n_questions": 34,
@@ -2453,7 +2453,7 @@ REMISSNISSEN.data["t8"].tr={
     "Psoriasis (hårbotten och underliv)",
     "Psoriasis (hårbotten, kropp)"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 26,
    "n_questions": 44,
@@ -2931,7 +2931,7 @@ REMISSNISSEN.data["t8"].tr={
     "PMR",
     "Polymyalgia rheumatica som differentialdiagnos till fibromyalgi"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "begrepp",
    "n_sessions": 24,
    "n_questions": 32,
@@ -3301,7 +3301,7 @@ REMISSNISSEN.data["t8"].tr={
     "Grampositiva kocker vs meningokocker",
     "HSV-1"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 22,
    "n_questions": 66,
@@ -3978,7 +3978,7 @@ REMISSNISSEN.data["t8"].tr={
     "Ikterus med feber hos ung man – differentialdiagnos",
     "Kronifieringsrisk vid akut hepatit"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 20,
    "n_questions": 38,
@@ -4396,7 +4396,7 @@ REMISSNISSEN.data["t8"].tr={
     "böjveckseksem",
     "epikutantest"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 20,
    "n_questions": 23,
@@ -4676,7 +4676,7 @@ REMISSNISSEN.data["t8"].tr={
     "SOFA",
     "Sepsis"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 18,
    "n_questions": 47,
@@ -5180,7 +5180,7 @@ REMISSNISSEN.data["t8"].tr={
     "Cystit – kompletterande anamnes inför behandling",
     "Cystit – risk för pyelonefrit"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 18,
    "n_questions": 45,
@@ -5666,7 +5666,7 @@ REMISSNISSEN.data["t8"].tr={
     "Septisk artrit – empirisk antibiotikabehandling",
     "Septisk artrit – etiologi"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 20,
    "n_questions": 41,
@@ -6569,7 +6569,7 @@ REMISSNISSEN.data["t8"].tr={
     "nervskada smärta",
     "neurogen smärta"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "begrepp",
    "n_sessions": 18,
    "n_questions": 23,
@@ -6847,7 +6847,7 @@ REMISSNISSEN.data["t8"].tr={
     "antihistamin",
     "dermografi"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 19,
    "n_questions": 21,
@@ -7115,7 +7115,7 @@ REMISSNISSEN.data["t8"].tr={
     "Smittskyddsråd vid sexuellt överförbar infektion",
     "Smittspårning vid STI"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "begrepp",
    "n_sessions": 16,
    "n_questions": 20,
@@ -7670,7 +7670,7 @@ REMISSNISSEN.data["t8"].tr={
     "munslemhinna",
     "munslemhinna lichen planus"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 15,
    "n_questions": 22,
@@ -8154,7 +8154,7 @@ REMISSNISSEN.data["t8"].tr={
     "lichen sclerosus et atrophicus",
     "vulvakläda äldre kvinna"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 15,
    "n_questions": 16,
@@ -8365,7 +8365,7 @@ REMISSNISSEN.data["t8"].tr={
     "Smittspårning vid klamydia – ej testande partner",
     "Uretrit"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 15,
    "n_questions": 20,
@@ -8620,7 +8620,7 @@ REMISSNISSEN.data["t8"].tr={
     "akralt melanom",
     "epidemiologi melanom"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 16,
    "n_questions": 23,
@@ -8888,7 +8888,7 @@ REMISSNISSEN.data["t8"].tr={
     "kompression",
     "kompressionsbehandling"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 14,
    "n_questions": 15,
@@ -9953,7 +9953,7 @@ REMISSNISSEN.data["t8"].tr={
     "akut remiss infektionsklinik",
     "blodutstryk"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 14,
    "n_questions": 17,
@@ -10404,7 +10404,7 @@ REMISSNISSEN.data["t8"].tr={
     "smittskyddslagen",
     "vårtor på glans"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 14,
    "n_questions": 14,
@@ -10608,7 +10608,7 @@ REMISSNISSEN.data["t8"].tr={
     "Samhällsförvärvad pneumoni, initial antibiotika",
     "Samhällsförvärvad pneumoni, uppföljning"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 13,
    "n_questions": 35,
@@ -11916,7 +11916,7 @@ REMISSNISSEN.data["t8"].tr={
     "Radikulopati",
     "Status vid cervikobrakialgi"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "begrepp",
    "n_sessions": 12,
    "n_questions": 19,
@@ -12162,7 +12162,7 @@ REMISSNISSEN.data["t8"].tr={
     "efflorescenser",
     "hudefflorescens"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "begrepp",
    "n_sessions": 13,
    "n_questions": 18,
@@ -12390,7 +12390,7 @@ REMISSNISSEN.data["t8"].tr={
     "Whiplashskada (WAD)",
     "Whiplashskada (WAD), prognos"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "diagnos",
    "n_sessions": 12,
    "n_questions": 16,
@@ -12596,7 +12596,7 @@ REMISSNISSEN.data["t8"].tr={
     "crustös skabb",
     "klåda"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 12,
    "n_questions": 14,
@@ -12952,7 +12952,7 @@ REMISSNISSEN.data["t8"].tr={
     "basalcellscancer",
     "basaliom"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 14,
    "n_questions": 14,
@@ -13394,7 +13394,7 @@ REMISSNISSEN.data["t8"].tr={
     "TBC extrapulmonell",
     "Tuberkulos vid anti-TNF-behandling"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 13,
    "n_questions": 21,
@@ -14030,7 +14030,7 @@ REMISSNISSEN.data["t8"].tr={
     "pemfigoid",
     "pemphigoid"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 13,
    "n_questions": 14,
@@ -14217,7 +14217,7 @@ REMISSNISSEN.data["t8"].tr={
     "smärtbehandling",
     "smärtkategorier"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "begrepp",
    "n_sessions": 12,
    "n_questions": 14,
@@ -14407,7 +14407,7 @@ REMISSNISSEN.data["t8"].tr={
     "handeksem",
     "kontaktallergen"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "begrepp",
    "n_sessions": 12,
    "n_questions": 13,
@@ -15295,7 +15295,7 @@ REMISSNISSEN.data["t8"].tr={
     "under-5-dödlighet",
     "vaccintäckning"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 12,
    "n_questions": 17,
@@ -15903,7 +15903,7 @@ REMISSNISSEN.data["t8"].tr={
     "atopisk dermatit",
     "famciklovir"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 9,
    "n_questions": 11,
@@ -16076,7 +16076,7 @@ REMISSNISSEN.data["t8"].tr={
     "member checking",
     "narrativ intervju"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 12,
    "n_questions": 13,
@@ -16267,7 +16267,7 @@ REMISSNISSEN.data["t8"].tr={
     "melanom exstirpation",
     "ugly duckling sign"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "begrepp",
    "n_sessions": 11,
    "n_questions": 12,
@@ -16441,7 +16441,7 @@ REMISSNISSEN.data["t8"].tr={
     "isotretinoinbehandling",
     "papulo-pustulös akne"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 11,
    "n_questions": 12,
@@ -17082,7 +17082,7 @@ REMISSNISSEN.data["t8"].tr={
     "sekretessbrytande",
     "våld i nära relation"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 11,
    "n_questions": 19,
@@ -17323,7 +17323,7 @@ REMISSNISSEN.data["t8"].tr={
     "bettskada",
     "bitinfektion"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 9,
    "n_questions": 13,
@@ -17506,7 +17506,7 @@ REMISSNISSEN.data["t8"].tr={
     "keratinocyter",
     "pigmentceller"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "begrepp",
    "n_sessions": 9,
    "n_questions": 11,
@@ -17855,7 +17855,7 @@ REMISSNISSEN.data["t8"].tr={
     "rörelserädsla",
     "smärthantering"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "begrepp",
    "n_sessions": 11,
    "n_questions": 12,
@@ -18021,7 +18021,7 @@ REMISSNISSEN.data["t8"].tr={
     "solkeratos",
     "solskadad hud"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 9,
    "n_questions": 9,
@@ -18161,7 +18161,7 @@ REMISSNISSEN.data["t8"].tr={
     "portvinsfläck",
     "vaskulär malformation"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 10,
    "n_questions": 10,
@@ -18304,7 +18304,7 @@ REMISSNISSEN.data["t8"].tr={
     "Långvarig smärta, IASP-definition",
     "kronisk smärta"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "begrepp",
    "n_sessions": 10,
    "n_questions": 10,
@@ -18453,7 +18453,7 @@ REMISSNISSEN.data["t8"].tr={
     "naevus",
     "nevus"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 10,
    "n_questions": 10,
@@ -19378,7 +19378,7 @@ REMISSNISSEN.data["t8"].tr={
     "aminoglykosidbiverkan",
     "antibiotikaallergi"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 8,
    "n_questions": 14,
@@ -19779,7 +19779,7 @@ REMISSNISSEN.data["t8"].tr={
     "antigen drift",
     "baloxavir"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 8,
    "n_questions": 14,
@@ -19977,7 +19977,7 @@ REMISSNISSEN.data["t8"].tr={
     "piperacillin-tazobaktam",
     "pyelonefrit"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 8,
    "n_questions": 13,
@@ -20166,7 +20166,7 @@ REMISSNISSEN.data["t8"].tr={
     "studiedesign",
     "störfaktor"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 10,
    "n_questions": 14,
@@ -20366,7 +20366,7 @@ REMISSNISSEN.data["t8"].tr={
     "rosfeber",
     "rosfeber finger"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 9,
    "n_questions": 12,
@@ -20701,7 +20701,7 @@ REMISSNISSEN.data["t8"].tr={
     "uppströmsnivå",
     "Ökad sårbarhet vid ojämlikhet i hälsa"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 10,
    "n_questions": 13,
@@ -21205,7 +21205,7 @@ REMISSNISSEN.data["t8"].tr={
     "palmoplantar keratodermi",
     "pigmentlöshet"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 9,
    "n_questions": 10,
@@ -21347,7 +21347,7 @@ REMISSNISSEN.data["t8"].tr={
     "primärmedaljong",
     "roséola"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 8,
    "n_questions": 8,
@@ -21474,7 +21474,7 @@ REMISSNISSEN.data["t8"].tr={
     "hudsvamp",
     "ljumskdermatofytos"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 11,
    "n_questions": 11,
@@ -21934,7 +21934,7 @@ REMISSNISSEN.data["t8"].tr={
     "SinoJect",
     "Sinuit"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 7,
    "n_questions": 24,
@@ -22222,7 +22222,7 @@ REMISSNISSEN.data["t8"].tr={
     "Val av antibiotika vid streptokocktonsillit",
     "faryngotonsillit"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 7,
    "n_questions": 19,
@@ -22878,7 +22878,7 @@ REMISSNISSEN.data["t8"].tr={
     "akut HIV",
     "candida"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 8,
    "n_questions": 13,
@@ -23061,7 +23061,7 @@ REMISSNISSEN.data["t8"].tr={
     "sepsis",
     "streptokocker grupp A"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 8,
    "n_questions": 13,
@@ -23243,7 +23243,7 @@ REMISSNISSEN.data["t8"].tr={
     "relativ risk",
     "riskkvot"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 9,
    "n_questions": 12,
@@ -23770,7 +23770,7 @@ REMISSNISSEN.data["t8"].tr={
     "sjukvårdsfinansiering",
     "universal health coverage"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 10,
    "n_questions": 12,
@@ -24203,7 +24203,7 @@ REMISSNISSEN.data["t8"].tr={
     "syfilis",
     "uretrit"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 8,
    "n_questions": 11,
@@ -24357,7 +24357,7 @@ REMISSNISSEN.data["t8"].tr={
     "morbilli",
     "pertussis"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 8,
    "n_questions": 9,
@@ -24496,7 +24496,7 @@ REMISSNISSEN.data["t8"].tr={
     "apokrina körtlar",
     "svettkörtlar"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 7,
    "n_questions": 7,
@@ -24613,7 +24613,7 @@ REMISSNISSEN.data["t8"].tr={
     "svettning lokal",
     "överdriven svettning"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 7,
    "n_questions": 7,
@@ -25114,7 +25114,7 @@ REMISSNISSEN.data["t8"].tr={
     "toxintest feces",
     "vankomycin"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 7,
    "n_questions": 13,
@@ -25292,7 +25292,7 @@ REMISSNISSEN.data["t8"].tr={
     "sorkfeber",
     "symtomatisk behandling"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 7,
    "n_questions": 11,
@@ -26516,7 +26516,7 @@ REMISSNISSEN.data["t8"].tr={
     "måltavlor",
     "targetlesioner"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 6,
    "n_questions": 4,
@@ -26604,7 +26604,7 @@ REMISSNISSEN.data["t8"].tr={
     "diabeteshudförändring",
     "ringformad papulös förändring"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 6,
    "n_questions": 7,
@@ -26958,7 +26958,7 @@ REMISSNISSEN.data["t8"].tr={
     "selensulfidschampo",
     "tinea versicolor"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 6,
    "n_questions": 7,
@@ -27417,7 +27417,7 @@ REMISSNISSEN.data["t8"].tr={
     "skivepitelcancer",
     "skivepitelcancer in situ"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 6,
    "n_questions": 6,
@@ -27536,7 +27536,7 @@ REMISSNISSEN.data["t8"].tr={
     "steroidbiverkningar",
     "steroidrosacea"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "begrepp",
    "n_sessions": 8,
    "n_questions": 8,
@@ -27663,7 +27663,7 @@ REMISSNISSEN.data["t8"].tr={
     "meticillinresistent Staphylococcus aureus",
     "vankomycin"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 6,
    "n_questions": 6,
@@ -27765,7 +27765,7 @@ REMISSNISSEN.data["t8"].tr={
     "seborroiska keratoser",
     "åldersvårta"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 7,
    "n_questions": 7,
@@ -27874,7 +27874,7 @@ REMISSNISSEN.data["t8"].tr={
     "smärtanalys",
     "smärtanamnes höft"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "begrepp",
    "n_sessions": 6,
    "n_questions": 6,
@@ -27983,7 +27983,7 @@ REMISSNISSEN.data["t8"].tr={
     "smärtanalys",
     "smärtteckning"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "begrepp",
    "n_sessions": 5,
    "n_questions": 5,
@@ -28092,7 +28092,7 @@ REMISSNISSEN.data["t8"].tr={
     "virusdiagnostik",
     "virusisolering"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 6,
    "n_questions": 6,
@@ -28502,7 +28502,7 @@ REMISSNISSEN.data["t8"].tr={
     "salmonella",
     "vinterkräksjuka"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 5,
    "n_questions": 9,
@@ -28787,7 +28787,7 @@ REMISSNISSEN.data["t8"].tr={
     "indikation antiviral behandling",
     "latens"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 5,
    "n_questions": 9,
@@ -29058,7 +29058,7 @@ REMISSNISSEN.data["t8"].tr={
     "gula stafylokocker",
     "urosepsis enterokocker"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 5,
    "n_questions": 7,
@@ -29429,7 +29429,7 @@ REMISSNISSEN.data["t8"].tr={
     "meropenem",
     "multiresistenta bakterier"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 6,
    "n_questions": 8,
@@ -29798,7 +29798,7 @@ REMISSNISSEN.data["t8"].tr={
     "mål 3",
     "tidig barnutveckling"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 7,
    "n_questions": 8,
@@ -29938,7 +29938,7 @@ REMISSNISSEN.data["t8"].tr={
     "sensitivitet",
     "sensitivitet specificitet"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 5,
    "n_questions": 6,
@@ -30152,7 +30152,7 @@ REMISSNISSEN.data["t8"].tr={
     "sputumodling",
     "urinodling"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 5,
    "n_questions": 6,
@@ -30263,7 +30263,7 @@ REMISSNISSEN.data["t8"].tr={
     "hepatit A och B",
     "japansk encefalit"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 5,
    "n_questions": 6,
@@ -30480,7 +30480,7 @@ REMISSNISSEN.data["t8"].tr={
     "harpest",
     "ulceroglandulär tularemi"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 5,
    "n_questions": 6,
@@ -30583,7 +30583,7 @@ REMISSNISSEN.data["t8"].tr={
     "giardiasis",
     "reseförvärvad subakut diarré"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 6,
    "n_questions": 6,
@@ -30685,7 +30685,7 @@ REMISSNISSEN.data["t8"].tr={
     "hästblåsor",
     "höstblåsor"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 5,
    "n_questions": 5,
@@ -31100,7 +31100,7 @@ REMISSNISSEN.data["t8"].tr={
     "smärtrehabilitering",
     "teamutredning smärta"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "begrepp",
    "n_sessions": 5,
    "n_questions": 5,
@@ -31506,7 +31506,7 @@ REMISSNISSEN.data["t8"].tr={
     "rosacea",
     "steroidutlöst dermatit"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 6,
    "n_questions": 6,
@@ -32561,7 +32561,7 @@ REMISSNISSEN.data["t8"].tr={
     "follikelcysta",
     "svettkörteltumör"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 4,
    "n_questions": 6,
@@ -32680,7 +32680,7 @@ REMISSNISSEN.data["t8"].tr={
     "multiplex PCR",
     "nasofarynxprov"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 4,
    "n_questions": 6,
@@ -32912,7 +32912,7 @@ REMISSNISSEN.data["t8"].tr={
     "klaffendokardit",
     "tandvårdsrelaterad endokardit"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 5,
    "n_questions": 7,
@@ -33029,7 +33029,7 @@ REMISSNISSEN.data["t8"].tr={
     "likvorprov",
     "lumbalpunktion"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 4,
    "n_questions": 5,
@@ -33236,7 +33236,7 @@ REMISSNISSEN.data["t8"].tr={
     "pneumokonios",
     "stendamm"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 5,
    "n_questions": 6,
@@ -33444,7 +33444,7 @@ REMISSNISSEN.data["t8"].tr={
     "borreliainfektion",
     "doxycyklin"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 5,
    "n_questions": 5,
@@ -33727,7 +33727,7 @@ REMISSNISSEN.data["t8"].tr={
     "miljöhänsyn i vården",
     "vektorburna sjukdomar"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 5,
    "n_questions": 5,
@@ -33825,7 +33825,7 @@ REMISSNISSEN.data["t8"].tr={
     "legionella",
     "levofloxacin"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 4,
    "n_questions": 4,
@@ -34001,7 +34001,7 @@ REMISSNISSEN.data["t8"].tr={
     "optimal åtgärd",
     "riskbedömning kemikalier"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 6,
    "n_questions": 6,
@@ -34107,7 +34107,7 @@ REMISSNISSEN.data["t8"].tr={
     "molluscum contagiosum",
     "mollusker"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 6,
    "n_questions": 6,
@@ -34305,7 +34305,7 @@ REMISSNISSEN.data["t8"].tr={
     "seborroiskt eksem",
     "spädbarnseksem"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 5,
    "n_questions": 6,
@@ -34406,7 +34406,7 @@ REMISSNISSEN.data["t8"].tr={
     "pacemaker",
     "transkutan elektrisk nervstimulering"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "begrepp",
    "n_sessions": 4,
    "n_questions": 4,
@@ -34979,7 +34979,7 @@ REMISSNISSEN.data["t8"].tr={
     "mononukleos",
     "mononukleos-serologi"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 3,
    "n_questions": 4,
@@ -35067,7 +35067,7 @@ REMISSNISSEN.data["t8"].tr={
     "arbetsmiljö migranter",
     "småföretag arbetsmiljö"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 4,
    "n_questions": 4,
@@ -35154,7 +35154,7 @@ REMISSNISSEN.data["t8"].tr={
     "perifer arteriell sjukdom",
     "perifer kärlsjukdom"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 3,
    "n_questions": 3,
@@ -35623,7 +35623,7 @@ REMISSNISSEN.data["t8"].tr={
     "spolmask",
     "springmask"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 3,
    "n_questions": 3,
@@ -35701,7 +35701,7 @@ REMISSNISSEN.data["t8"].tr={
     "antikroppsbrist",
     "hypogammaglobulinemi"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 4,
    "n_questions": 4,
@@ -35786,7 +35786,7 @@ REMISSNISSEN.data["t8"].tr={
     "streptokocker",
     "svinkoppor"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 3,
    "n_questions": 3,
@@ -36035,7 +36035,7 @@ REMISSNISSEN.data["t8"].tr={
     "ljusbehandling",
     "monokromatiskt ljus"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "begrepp",
    "n_sessions": 3,
    "n_questions": 3,
@@ -36193,7 +36193,7 @@ REMISSNISSEN.data["t8"].tr={
     "luftvägsinfektion",
     "mykoplasmapneumoni"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 4,
    "n_questions": 4,
@@ -36631,7 +36631,7 @@ REMISSNISSEN.data["t8"].tr={
     "pyelonefrit behandling",
     "trimetoprim-sulfa"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 4,
    "n_questions": 9,
@@ -37195,7 +37195,7 @@ REMISSNISSEN.data["t8"].tr={
     "postsplenektomisepsis",
     "splenektomi"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 2,
    "n_questions": 2,
@@ -37386,7 +37386,7 @@ REMISSNISSEN.data["t8"].tr={
     "erythema nodosum",
     "knölros"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 2,
    "n_questions": 2,
@@ -37448,7 +37448,7 @@ REMISSNISSEN.data["t8"].tr={
     "Sudecks",
     "neuropatisk smärta efter handkirurgi"
    ],
-   "specialty": "Rehabmedicin",
+   "specialty": "Rehabiliteringsmedicin",
    "kind": "diagnos",
    "n_sessions": 2,
    "n_questions": 2,
@@ -37509,7 +37509,7 @@ REMISSNISSEN.data["t8"].tr={
     "Listeria monocytogenes",
     "ampicillin"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 2,
    "n_questions": 2,
@@ -37705,7 +37705,7 @@ REMISSNISSEN.data["t8"].tr={
     "risk factor approach",
     "risk perception"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 2,
    "n_questions": 2,
@@ -37772,7 +37772,7 @@ REMISSNISSEN.data["t8"].tr={
     "hudtyp",
     "solskydd"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "begrepp",
    "n_sessions": 2,
    "n_questions": 2,
@@ -37901,7 +37901,7 @@ REMISSNISSEN.data["t8"].tr={
    "synonyms": [
     "vitiligo"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 2,
    "n_questions": 2,
@@ -37962,7 +37962,7 @@ REMISSNISSEN.data["t8"].tr={
     "klåda vulva",
     "vulvovaginal candida"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 2,
    "n_questions": 2,
@@ -38294,7 +38294,7 @@ REMISSNISSEN.data["t8"].tr={
     "fläckfeber",
     "zoonoser"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 1,
    "n_questions": 2,
@@ -38349,7 +38349,7 @@ REMISSNISSEN.data["t8"].tr={
     "aminoglykosider",
     "gentamicin"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "begrepp",
    "n_sessions": 1,
    "n_questions": 1,
@@ -38393,7 +38393,7 @@ REMISSNISSEN.data["t8"].tr={
    "synonyms": [
     "mpox"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 1,
    "n_questions": 1,
@@ -38441,7 +38441,7 @@ REMISSNISSEN.data["t8"].tr={
     "cercariae",
     "simmarklåda"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "diagnos",
    "n_sessions": 1,
    "n_questions": 1,
@@ -38488,7 +38488,7 @@ REMISSNISSEN.data["t8"].tr={
    "synonyms": [
     "neutropen feber"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 1,
    "n_questions": 1,
@@ -38534,7 +38534,7 @@ REMISSNISSEN.data["t8"].tr={
    "synonyms": [
     "näsa främmande kropp"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 1,
    "n_questions": 1,
@@ -38668,7 +38668,7 @@ REMISSNISSEN.data["t8"].tr={
    "synonyms": [
     "Hemophilus influenzae"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 1,
    "n_questions": 1,
@@ -38757,7 +38757,7 @@ REMISSNISSEN.data["t8"].tr={
     "Hudbiopsi – teknik",
     "biopsi av hud"
    ],
-   "specialty": "Dermatologi",
+   "specialty": "Dermatologi & venereologi",
    "kind": "begrepp",
    "n_sessions": 1,
    "n_questions": 1,
@@ -38810,7 +38810,7 @@ REMISSNISSEN.data["t8"].tr={
     "KOL-exacerbation – antibiotikaval",
     "amoxicillin"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 1,
    "n_questions": 1,
@@ -39044,7 +39044,7 @@ REMISSNISSEN.data["t8"].tr={
    "synonyms": [
     "Sjuklön och sjukpenning, arbetsgivarperiod"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 1,
    "n_questions": 1,
@@ -39273,7 +39273,7 @@ REMISSNISSEN.data["t8"].tr={
     "planetära gränser",
     "tröskelpunkt"
    ],
-   "specialty": "Samhällsmedicin",
+   "specialty": "Samhällsmedicin och global hälsa",
    "kind": "begrepp",
    "n_sessions": 1,
    "n_questions": 1,
@@ -39321,7 +39321,7 @@ REMISSNISSEN.data["t8"].tr={
     "Vibrioinfektion",
     "badsårsfeber"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 1,
    "n_questions": 1,
@@ -39416,7 +39416,7 @@ REMISSNISSEN.data["t8"].tr={
     "KNS protes",
     "operationsmiljö infektion"
    ],
-   "specialty": "Infektion",
+   "specialty": "Infektionssjukdomar",
    "kind": "diagnos",
    "n_sessions": 2,
    "n_questions": 3,
