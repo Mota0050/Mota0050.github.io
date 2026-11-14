@@ -2592,7 +2592,7 @@ REMISSNISSEN.data["t7"].cc={
   },
   {
    "id": "t7-029",
-   "name": "Appendicit",
+   "name": "Appendicit – kolorektalkirurgisk handläggning",
    "specialty": "Kirurgi",
    "sub": "Kolorektal kirurgi",
    "ty": "akut",
@@ -20510,7 +20510,7 @@ REMISSNISSEN.data["t7"].cc={
   },
   {
    "id": "t7-226",
-   "name": "Residualurinmätning",
+   "name": "Residualurinmätning – praktiskt utförande",
    "specialty": "Urologi",
    "sub": "Urologiska praktiska färdigheter",
    "ty": "und",
